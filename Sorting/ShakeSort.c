@@ -20,7 +20,7 @@
 
 #include<stdio.h>
 
-void bubbleSort(int[], int);
+void ShakeSort(int[], int);
 void display(int [], int);
 
 void main()
@@ -36,12 +36,12 @@ void main()
         scanf("%d",&arr[i]);
     }
 
-    bubbleSort(arr, n);
+    ShakeSort(arr, n);
     display(arr, n);
     
 }
 
-void bubbleSort(int arr[], int n)
+void ShakeSort(int arr[], int n)
 {
     int flag = 1, i, j, k, temp;
     for(i=0; i<n && flag==1; i++)
